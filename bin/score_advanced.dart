@@ -17,8 +17,8 @@ class StudentScore extends Score {
   @override
   void showInfo() => print('이름: $name, 점수: $score');
 
-  void saveInfo() {
-    File result = File('result.txt');
+  void saveInfo(String path) {
+    File result = File(path);
     result.writeAsStringSync('이름: $name, 점수: $score');
   }
 }
@@ -56,7 +56,7 @@ void main() {
 
       // 4. 프로그램 종료 후, 결과를 파일에 저장하는 기능 ⚪️
       try {
-        found.saveInfo();
+        found.saveInfo('result.txt');
         print('저장이 완료되었습니다.');
       } catch (e) {
         print("저장에 실패했습니다: $e");
