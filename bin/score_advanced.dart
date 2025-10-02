@@ -1,6 +1,6 @@
 import 'dart:io';
 
-// 1. Score와 StudentScore 클래스를 구성하기 ⚪️
+// 1. Score와 StudentScore 클래스를 구성하기 (객체 지향 활용) ⚪️
 class Score {
   int score;
 
@@ -43,7 +43,7 @@ Future<void> main() async {
     objects.add(object);
   }
 
-  // 3. 사용자로부터 입력 받아 학생 점수 확인 기능 ⚪️
+  // 3. 사용자로부터 입력 받아 학생 점수 확인 기능 (예외 처리 활용) ⚪️
   while (true) {
     print('> 어떤 학생의 점수를 확인하시겠습니까?');
     String? input = stdin.readLineSync();
@@ -52,7 +52,7 @@ Future<void> main() async {
       StudentScore found = objects.firstWhere((o) => o.name == input);
       found.showInfo();
 
-      // 4. 프로그램 종료 후, 결과를 파일에 저장하는 기능 ⚪️
+      // 4. 프로그램 종료 후, 결과를 파일에 저장하는 기능 (예외 처리, 비동기 활용) ⚪️
       try {
         print('저장 중..');
         await Future.delayed(Duration(seconds: 2), () {
