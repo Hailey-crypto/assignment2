@@ -49,9 +49,7 @@ void main() {
     String? input = stdin.readLineSync();
 
     try {
-      StudentScore found = objects.firstWhere(
-        (student) => student.name == input,
-      );
+      StudentScore found = objects.firstWhere((o) => o.name == input);
       found.showInfo();
 
       // 4. 프로그램 종료 후, 결과를 파일에 저장하는 기능 ⚪️
