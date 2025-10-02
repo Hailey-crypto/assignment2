@@ -1,10 +1,10 @@
 {
   "roots": [
-    "score_advanced"
+    "assignment2"
   ],
   "packages": [
     {
-      "name": "score_advanced",
+      "name": "assignment2",
       "version": "1.0.0",
       "dependencies": [
         "path"
