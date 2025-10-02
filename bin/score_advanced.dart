@@ -88,13 +88,16 @@ void main() {
         print('전체 평균 점수: $average2');
       case '3':
         // 5-3. 전체 등수를 출력하는 기능 (나만의 추가 기능 구현) ⚪️
+        List<String> names2 = List.from(names);
+        List<int> scores2 = List.from(scores);
+
         for (int i = 1; i < objects.length + 1; i++) {
-          int index = scores.indexOf(scores.reduce((a, b) => a > b ? a : b));
-          String bestName = names[index];
-          int bestScore = scores[index];
+          int index = scores2.indexOf(scores2.reduce((a, b) => a > b ? a : b));
+          String bestName = names2[index];
+          int bestScore = scores2[index];
           print('$i등: $bestName (점수: $bestScore)');
-          names.remove(bestName);
-          scores.remove(bestScore);
+          names2.removeAt(index);
+          scores2.removeAt(index);
         }
       case '4':
         print('프로그램을 종료합니다.');
