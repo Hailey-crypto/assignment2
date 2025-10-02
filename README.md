@@ -1,2 +1,78 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+
+
+# 🎓 Dart 프로그래밍 심화 과제
+
+이 프로젝트는 Dart 언어로 작성된 간단한 과제용 프로그램입니다. 
+**학생들의 점수 파일 읽어오기** 를 시행하고, **사용자로부터 데이터를 입력 받아 다양한 기능을 수행** 하고, **결과를 저장** 할 수 있습니다. 
+
+
+# 📌 기능
+
+1. 입력한 학생의 점수 확인
+2. 우수 학생 확인
+3. 전체 평균 점수 확인
+4. 전체 등수 확인
+
+
+# 📖 예시 실행 결과
+
+1. > 어떤 학생의 점수를 확인하시겠습니까?<br/>
+    홍길동<br/>
+    이름: 홍길동, 점수: 90<br/>
+    저장 중..<br/>
+    저장이 완료되었습니다.<br/>
+
+    > 메뉴를 선택하세요 : <br/>
+    1. 우수생 출력 
+    2. 전체 평균 점수 출력 
+    3. 전체 등수 출력 
+    4. 종료
+
+2. 1<br/>
+    우수생: 홍길동 (점수: 90)<br/>
+
+3. 2<br/>
+    전체 평균 점수: 85.00<br/>
+
+4. 3<br/>
+    1등: 홍길동 (점수: 90)<br/>
+    2등: 김철수 (점수: 80)<br/>
+
+
+# 🚀 실행 방법
+
+1. 저장소 클론
+```bash
+git clone https://github.com/Hailey-crypto/assignment2.git
+cd assignment2
+```
+2. 실행
+```bash
+dart run bin/main.dart
+```
+
+
+# 📂 프로젝트 구조
+
+assignment2/
+- bin/ main.dart : 메인 실행 파일
+- lib/ class.dart : Score, StudentScore 클래스 정의
+- students.txt : 학생들의 점수 데이터 (ex. '홍길동,90')
+- result.txt : 실행 후 결과 저장 파일
+- README.md : 프로젝트 설명 문서
+
+
+# 📝 커밋 컨벤션
+
+- feat: 새로운 기능 추가
+- fix: 버그 수정
+- docs: 문서 수정
+- style: 코드 포맷팅, 세미콜론 누락 등
+- refactor: 코드 리팩터링
+- test: 테스트 코드 추가
+- chore: 빌드, 패키지 매니저 등 환경 설정
+
+
+# 👤 작성자
+
+안혜린
